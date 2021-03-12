@@ -4,11 +4,16 @@ A simple way to connect event of each HTML element By javascript
 **You can connect(add) relationship of elements at anywhere dont need override fully event function**
 
 **You can disconnect(remove) relationship of elements at anywhere dont need override fully event function**
+
+**But cant using this inside callback function need to follow below using parameter get then same like before 
+  * ie: event.target inside callback function
+  * [example0](https://github.com/FITLOSS/ConnectJS/blob/main/Example0.html)
 # Function Introduction
 
 ## on(callback function):(not jquery's on , is ConnectJS's on):
 ConnectJS must use on to bind event
-
+* callback function:
+  * parameter(event):
 ## connect(css selector,event name,callback function):
 connect mutiple html elements(means if bind event active then will do what you define to effect another element/elements)
 * callback function:
