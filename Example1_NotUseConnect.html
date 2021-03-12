@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+
+<text>Example<text>
+<br>
+<button id="x1">A</button>
+<button id="x2">B</button>
+<button id="x3">C</button>
+<button id="x4">D</button>
+<script>
+
+
+document.querySelector("#x1").onclick=function(){
+	document.querySelector("#x2")style.color="red";
+	console.log("Before x1 click!!! x2");
+	console.log("x1 click!!!!!!!");
+	document.querySelector("#x3")style.color="pink";
+	console.log("After x1 click!!! x3");
+	document.querySelector("#x4")style.color="blue";
+	console.log("After x1 click!!! x4");
+};
+
+</script>
+
+</body>
+</html>
