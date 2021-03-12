@@ -20,3 +20,10 @@ disconnect mutiple html elements(means you can remove part of event dont need to
 * [example2](https://github.com/FITLOSS/ConnectJS/blob/main/Example2.html)
 * [if not use ConnectJS](https://github.com/FITLOSS/ConnectJS/blob/main/Example2_NotUseConnect.html)
 
+## Todo
+* Add more introduction how about other function and how to use/debug 
+# function list
+* connect
+* disconnect
+* connects
+* disconnects
