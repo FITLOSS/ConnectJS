@@ -1,4 +1,7 @@
 # ConnectJS
+
+For modularize every events of html element!!!! (event module) 
+
 A simple way to connect event of each HTML element By javascript  
 
 **You can connect(add) relationship of elements at anywhere dont need override fully event function**
