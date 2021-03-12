@@ -43,3 +43,5 @@ disconnect mutiple html elements(means you can remove part of event dont need to
 * disconnect
 * connects
 * disconnects
+# Global variable List
+* Connect
