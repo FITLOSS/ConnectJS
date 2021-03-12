@@ -29,6 +29,10 @@ connect mutiple html elements(means if bind event active then will do what you d
 * [example1](https://github.com/FITLOSS/ConnectJS-event-module/blob/main/Example1.html)
 * [if not use ConnectJS](https://github.com/FITLOSS/ConnectJS-event-module/blob/main/Example1_NotUseConnect.html)
 
+* more powerful example
+  * [online example1-2](https://fitloss.github.io/ConnectJS-event-module/Example1-2.html)
+  * [example1-2](https://github.com/FITLOSS/ConnectJS-event-module/blob/main/Example1-2.html)
+
 ## disconnect(css selector,event name):
 disconnect mutiple html elements(means you can remove part of event dont need to override full function)
 * [online example2](https://fitloss.github.io/ConnectJS-event-module/Example2.html)
