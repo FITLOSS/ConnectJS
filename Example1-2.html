@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="./Connect.js"></script>
+</head>
+<body>
+<text>Example<text>
+<br>
+<button class="a">A</button>
+<button class="a">B</button>
+<button class="a">C</button>
+<br>
+<button class="b">A</button>
+<button class="b">B</button>
+<button class="b">C</button>
+<script>
+
+
+document.querySelectorAll(".a").on("click");
+document.querySelectorAll(".b").on("click");
+document.querySelectorAll(".a").connect(".b","click",{before:function(_e,_t){
+	for(var i=0;i<_t.length;i++){
+		_t[i].style.color="red";
+	}
+}});
+document.querySelectorAll(".b").connect(".a","click",{before:function(_e,_t){
+	for(var i=0;i<_t.length;i++){
+		_t[i].style.color="blue";
+	}
+}});
+
+</script>
+
+</body>
+</html>
