@@ -14,8 +14,10 @@ A simple way to connect event of each HTML element By javascript
   * [example0](https://github.com/FITLOSS/ConnectJS-event-module/blob/main/Example0.html)
 # Function Introduction
 
-## on(callback function):(not jquery's on , is ConnectJS's on):
+## on(event name,callback function):(not jquery's on , is ConnectJS's on)
 ConnectJS must use on to bind event
+* callback function:
+  * default is empty function
 * callback function:
   * parameter(event):
 * [online example0](https://fitloss.github.io/ConnectJS-event-module/Example0.html)
