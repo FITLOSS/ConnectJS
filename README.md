@@ -9,4 +9,4 @@ connect mutiple html elements(means if bind event active then will do what you d
   * parameter(event,target,event owner):
     * typeof target is NodeList
       
-example:
+* [example1](https://github.com/FITLOSS/ConnectJS/blob/main/Example1.html)
