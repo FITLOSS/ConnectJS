@@ -30,7 +30,7 @@ disconnect mutiple html elements(means you can remove part of event dont need to
 
 ## Todo
 * Add more introduction how about other function and how to use/debug 
-# function list
+# Function List
 * on
 * connect
 * disconnect
