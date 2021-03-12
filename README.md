@@ -29,7 +29,7 @@ disconnect mutiple html elements(means you can remove part of event dont need to
 * [if not use ConnectJS](https://github.com/FITLOSS/ConnectJS/blob/main/Example2_NotUseConnect.html)
 
 ## Todo
-* Add more introduction how about other function and how to use/debug 
+* Add more introduction how to use other functions && debug
 # Function List
 * on
 * connect
