@@ -5,7 +5,7 @@ A simple way to connect event of each HTML element By javascript
 
 **You can disconnect(remove) relationship of elements at anywhere dont need override fully event function**
 
-**But cant using this inside callback function need to follow below using parameter get then same like before**
+**But cant using this inside callback function need to follow below using parameter get something same like before**
   * ie: event.target inside callback function
   * [example0](https://github.com/FITLOSS/ConnectJS/blob/main/Example0.html)
 # Function Introduction
