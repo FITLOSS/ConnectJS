@@ -7,6 +7,7 @@ A simple way to connect event of each HTML element By javascript
 
 **But cant using this inside callback function need to follow below using parameter get something same like before**
   * ie: event.target inside callback function
+  * [online example0](https://fitloss.github.io/ConnectJS/Example0.html)
   * [example0](https://github.com/FITLOSS/ConnectJS/blob/main/Example0.html)
 # Function Introduction
 
