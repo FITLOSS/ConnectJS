@@ -6,6 +6,9 @@ A simple way to connect event of each HTML element By javascript
 **You can disconnect(remove) relationship of elements at anywhere dont need override fully event function**
 # Function Introduction
 
+## on(callback function):(not jquery's on , is ConnectJS's on):
+ConnectJS must use on to bind event
+
 ## connect(css selector,event name,callback function):
 connect mutiple html elements(means if bind event active then will do what you define to effect another element/elements)
 * callback function:
@@ -23,6 +26,7 @@ disconnect mutiple html elements(means you can remove part of event dont need to
 ## Todo
 * Add more introduction how about other function and how to use/debug 
 # function list
+* on
 * connect
 * disconnect
 * connects
