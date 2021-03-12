@@ -18,6 +18,8 @@ A simple way to connect event of each HTML element By javascript
 ConnectJS must use on to bind event
 * callback function:
   * default is empty function
+* [online example-1](https://fitloss.github.io/ConnectJS-event-module/Example-1.html)
+* [example-1](https://github.com/FITLOSS/ConnectJS-event-module/blob/main/Example-1.html)
 * callback function:
   * parameter(event):
 * [online example0](https://fitloss.github.io/ConnectJS-event-module/Example0.html)
