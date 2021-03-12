@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="./Connect.js"></script>
+</head>
+<body>
+
+<text>Example<text>
+<br>
+<button id="x1">A</button>
+<button id="x2">B</button>
+<button id="x3">C</button>
+<button id="x4">D</button>
+<script>
+
+
+document.querySelector("#x1").connect("#x2","click",{before:function(_e,_t,_s){
+	console.log("Before x1 click!!! x2");
+	_t[0].style.color="red";
+}});
+document.querySelector("#x1").connect("#x3","click",{after:function(_e,_t,_s){
+	console.log("After x1 click!!! x3");
+	_t[0].style.color="pink";
+}});
+document.querySelector("#x1").connect("#x4","click",{after:function(_e,_t,_s){
+	console.log("After x1 click!!! x4");
+	_t[0].style.color="blue";
+}});
+document.querySelector("#x1").on("click",function(){
+	console.log("x1 click!!!!!!!");
+});
+
+</script>
+
+</body>
+</html>
