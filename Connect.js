@@ -4,19 +4,24 @@
 	var ns = exports.Connect = exports.Connect || {};
 	var hep=HTMLElement.prototype;
 	var nlp=NodeList.prototype;
-	/**************ns**************/
-	//ns for querySelector getElementById
+	
+	var ConnectId = (function () {
+	  var _order = 0;
+	  return function(_ele) {
+		if (_ele&&!_ele.id) {
+		  _ele.id = "id_ConnectUsed_" + _order++;
+		}
+		return _ele.id;
+	  };
+	}());
+	/**************Connect**************/
+	//Connect for querySelector getElementById
 	hep.connect = function (_id, _event_name, _condition = {
 			before: function () {},
 			after: function () {}
 		}) {
 		var _tags = this.tagName;
-		if (!!this.id) {
-			_tags += "#" + this.id;
-		}
-		for (var i = 0; i < this.classList.length; i++) {
-			_tags += "." + this.classList[i];
-		}
+		_tags+="#"+ConnectId(this);
 		if (!ns.hasOwnProperty(_tags)) {
 			ns[_tags] = {};
 		}
@@ -37,7 +42,7 @@
 			};
 		}
 	};
-	//ns for querySelectorAll
+	//Connect for querySelectorAll
 	nlp.connect = function (_id, _event_name, _condition = {
 			before: function () {},
 			after: function () {}
@@ -46,7 +51,7 @@
 			this[i].connect(_id, _event_name, _condition);
 		}
 	};
-	/*---------------ns---------------*/
+	/*---------------Connect---------------*/
 
 	/**************Disconnect**************/
 	//Disconnect for querySelector getElementById
@@ -123,12 +128,7 @@
 	hep.on = function (_event_name = "click", _cb = function () {}) {
 		this.addEventListener(_event_name, function (_event) {
 			var _tags = this.tagName;
-			if (!!this.id) {
-				_tags += "#" + this.id;
-			}
-			for (var i = 0; i < this.classList.length; i++) {
-				_tags += "." + this.classList[i];
-			}
+			_tags+="#"+ConnectId(this);
 
 			if (ns.hasOwnProperty(_tags) && ns[_tags].hasOwnProperty(_event_name)) {
 				for (var _keyB of Object.keys(ns[_tags][_event_name])) {
